@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto","Lucida Grande","DejaVu Sans","Bitstream Vera Sans",Verdana,Arial,sans-serif;
+}
+.app{
+    display: block;
+    background: #FFFFFF;
+}
+.app .head{
+    background: #417690;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 15px;
+}
+.head .dja-title p{
+    font-size: 24px;
+    color: #e9d16b;
+}
+.head .links p{
+    padding-top:12px;
+    font-size: 11px;
+}
+.head .links a{
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+.app .title {
+    color: #FFFFFF;
+    background: #79AEC8;
+    padding: 10px 15px;
+}
+.title i{
+    font-size: 8px;
+}
+.title a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.main{
+    display: flex;
+    padding: 1px 0;
+    height: 100%;
+}
+.main .main-row{
+    position: absolute;
+    top: 20%;
+    background: #79AEC8;
+    padding: 0 5px;
+    /* height: 100%; */
+    flex-basis: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .main-menu{
+    flex-basis: 20%;
+    margin-left: 22px;
+    height: 100%;
+    width: 100%;
+    border-right: 1px solid rgba(0, 0, 0,.3);
+    border-left: 1px solid rgba(0, 0, 0,.3);
+}
+.main .main-menu .links .app-name{
+    background: #79AEC8;
+    color: #FFFFFF;
+    padding: 10px 8px;
+    font-size: 12px;
+}
+.main .main-menu .links{
+    display: block;
+
+}
+.main .main-menu .links .link-name{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    background: #F9F9F9;
+    border-bottom: 1px solid rgba(0, 0, 0,.3);
+}
+.main .main-menu .links .link-name:nth-child(even){
+    background: #FFFFFF;
+}
+.main .main-menu .links .link-name i{
+    padding-top: 3px;
+    color: #2d8e04;
+    font-size: 12px;
+}
+.main .main-menu .links .link-name .link-add{
+    display: flex;
+}
+.main .main-table{
+    flex-basis: 79%;
+}
+.add-space p{
+    color: #999999;
+    font-size: 25px;
+}
+.add-space,.table{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 20px;
+    border-bottom: 1px solid #999999;
+    padding-bottom: 10px;
+}
+.btn{
+    display: flex;
+    border-radius: 20px;
+    background: #999999;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5px;
+}
+.btn p,.btn i{
+    color: #fff;
+    font-size: 12px;
+    padding-left: 5px;
+}
