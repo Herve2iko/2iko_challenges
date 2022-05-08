@@ -88,6 +88,24 @@ body {
     font-size: 50px;
     letter-spacing: 4px;
 }
-
+@media screen and (max-width : 900px){
+	.content{
+		flex-direction: column;
+	}
+    .content .right{
+        flex-basis: 80%;
+        padding: 90px;
+        border-radius: 8px;
+    }
+}
+@media screen and (max-width : 600px){
+	.left{
+		display: none;
+	}
+    .content .right{
+        flex-basis: 80%;
+        padding: 10px;
+    }
+}
 
 
