@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="sliderimg()">
+    <div class="barnner">
+        <div class="slider">
+            <img src="./1.jpg" id="slidImg">
+        </div>
+        <div class="overlay">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./hv.png" alt="">
+                </div>
+                <div class="menu">
+                    <img src="./user.png" alt="">
+                    <img src="./quality.png" alt="">
+                    <img src="./quality.png" alt="">
+                </div>
+            </div>
+            <div class="content">
+                <h1>GATO KARAKURA</h1>
+                <h3>Ikorineza Hervé Delice</h3>
+                <div>
+                    <button>Show more</button>
+                    <button>Show more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var slider = document.getElementById("slidImg")
+        var images = new Array(
+            "./1.jpg",
+            "./2.jpg",
+            "./3.jpg",
+            "./4.jpg");
+        var len = images.length;
+        var i = 0;
+        function sliderimg(){
+            if(i>len-1){
+                i=0
+            }
+            slider.src=images[i]
+            i++;
+            setTimeout('sliderimg()',3000);
+        }
+    </script>
+</body>
+</html>
